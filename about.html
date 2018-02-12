@@ -46,7 +46,7 @@
 
         <aside>
 
-            <h2>Sidebar</h2>
+            <h2 id="test">Sidebar</h2>
             <p>
                 Stephen William Hawking, CH CBE FRS FRSA (/ˈstiːvən ˈhɔːkɪŋ/ (About this sound listen); born 8 January 1942) is an English
                 theoretical physicist, cosmologist, author and Director of Research at the Centre for Theoretical Cosmology
@@ -54,7 +54,80 @@
             </p>
 
         </aside>
+<!--
+        <svg width ="300" height ="300">
+            <circle cx="100" cy="100"  r="60" stroke="red" stroke-width="4" fill="green"/>      
+            Sorry, your browser doesnt support this Svg
+        </svg>
+    -->        
+        <!-- <canvas id="mycanvas" width="300" height="250"></canvas>
+        -->
+        <!--
+        <script>
+         var c = document.getElementById('mycanvas');
+         var ctx = c.getContext('2d');
 
+         //rectangle
+         /*
+         ctx.fillStyle='red';
+         ctx.fillRect(75,75,100,100);
+         */
+
+         //line
+         /*
+         ctx.moveTo(10,10);
+         ctx.lineTo(100,120);
+         ctx.stroke();
+         */
+
+         //Circle
+         /*
+         ctx.beginPath();
+         ctx.arc(150,150,60,0,2*Math.PI);
+         ctx.fillStyle='green';
+         ctx.fill();
+         ctx.lineWidth=6;
+         ctx.strokeStyle='red';
+         ctx.stroke();
+         */
+         
+         //Text
+         /*
+         ctx.font='50px Arial';
+         ctx.strokeStyle='red';
+         ctx.strokeText('Hello World', 20, 150);
+         */
+
+         //Gradient
+         var grd = ctx.createLinearGradient(0,0,100,0);
+         grd.addColorStop(0, 'blue');
+         grd.addColorStop(1,'red');
+         ctx.fillStyle = grd;
+         ctx.fillRect(10,10,150,150);
+
+        </script>
+        -->
+
+       
+        
+        <!--<script>
+             //session storage used when to delete data after a session
+        if(typeof(Storage)!=="undefined"){     
+           sessionStorage.setItem('name','shivam');
+
+           console.log(sessionStorage.getItem('name'));
+
+           sessionStrorage.removeItem('name');
+
+           document.getElementById('test').innerHTML=sessionStorage.getItem('name');
+        }else{
+            console.log('Stroge not available');
+        }
+
+         if(typeof(Storage)!=="undefined"){ localStorage.setItem('name','shivam'); console.log(localStorage.getItem('name')); localStrorage.removeItem('name');
+        document.getElementById('test').innerHTML=localStorage.getItem('name'); }else{ console.log('Stroge not available'); }
+        </script>
+    -->
         <div class="clr"></div>
 
         <footer>

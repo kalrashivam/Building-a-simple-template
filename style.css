@@ -50,6 +50,12 @@ main{
 	width:60%;
 }
 
+canvas{
+	border: 1px #000 solid;
+	background: #fff;
+	margin: 10px;
+}
+
 aside{
 	float:right;
 	width:30%;
